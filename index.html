@@ -1,0 +1,80 @@
+<html>
+    <head>
+        <title>Página principal</title>
+    </head>
+    <body>
+        <h1 id="inicio">Revisão do conteúdo do módulo 1</h1>
+        <hr />
+        <h2>Índice</h2>
+        <ul>
+            <li><a href="#basico">Estrutura Básica do HTML</a></li>
+            <li><a href="#sobre-tags">Falando sobre Tags</a></li>
+            <li><a href="#atributos">Atributos das Tags</a></li>
+            <li><a href="#textos">Textos</a></li>
+            <li><a href="#listas">Listas Ordenadas e Não Ordenadas</a></li>
+            <li><a href="#links">Links</a></li>
+        </ul>
+
+        <h2 id="basico">Estrutura Básica do HTML</h2>
+        <small><a href="#inicio">(Voltar)</a></small>
+        <p>A estrutura básica que é formada uma página em HTML é formado pela estrutura conforme abaixo:<br>
+            <code>
+                &lt;html&gt;<br>
+                &nbsp;&nbsp;&lt;head&gt;<br>
+                &nbsp;&nbsp;&lt;/head&gt;<br>
+                &nbsp;&nbsp;&lt;body&gt;<br>
+                &nbsp;&nbsp;&lt;/body&gt;<br>
+                &lt;/html&gt;
+            </code><br>
+            A tag que engloba todos os compoentes é a própria tag <strong>html</strong>, onde ela possue duas tags dentro dela, que são a <strong>head</strong> (onde ficarão as configurações da página) e a tag <strong>body</strong> (que é onde ficará o conteúdo do site)
+        </p>
+
+        <h2 id="sobre-tags">Falando sobre Tags</h2>
+        <small><a href="#inicio">(Voltar)</a></small>
+        <p>Além das tags mais básicas para construir a estrutura básica do HTML, também existem outras tags para contrução do mesmo, como por exemplo div, article, menu, header e assim por diante, levando em conta também as tags que não possuem tags de fechamento, como exemplos abaixo:<br>
+            <code>
+                &lt;input /&gt;<br>
+                &lt;img /&gt;
+            </code>
+        </p>
+
+        <h2 id="atributos">Atributos das Tags</h2>
+        <small><a href="#inicio">(Voltar)</a></small>
+        <p>As tags possuem também um tipo de configuração que são os atributos. Os atributos que todas as tags possuem em comum são os atributos id (que é usado normalmente como uma forma de identificar que aquela tag como elemento único) e a class (que normalmente é usado para marcar como estilo, usando CSS). Exemplo:<br>
+            <code>&lt;div id="artigo_principal" class="subtitulo texto-negrito"&gt;&lt;/div&gt;</code><br>
+        Mas também existem tags que possuem atributos especificos que funcionam apenas neles. Exemplo:<br>
+        <code>&lt;input type="text" /&gt;</code>
+        </p>
+
+        <h2 id="textos">Textos</h2>
+        <small><a href="#inicio">(Voltar)</a></small>
+        <p>Para fazer a formatação de texto no html, existem algumas tags como &lt;p&gt; para parágrafo, &lt;string&gt; para texto negrito, &lt;i&gt; para itálico e &lt;blockquote&gt; para citação, basta apenas por o conteúdo dentro dessas tags para que o texto fique formatado.</p>
+
+        <h2 id="listas">Listas Ordenadas e Não Ordenadas</h2>
+        <small><a href="#inicio">(Voltar)</a></small>
+        <p>Para criar listas, são usadas as tags ul (lista não ordenada) e ol (lista ordenada), e usando a tag li adentro de ambos para criar os itens da lista. Exemplo:<br>
+        <code>&lt;ul&gt;<br>
+            &nbsp;&nbsp;&lt;li&gt;Item 1&lt;/li&gt;<br>
+            &nbsp;&nbsp;&lt;li&gt;Item 2&lt;/li&gt;<br>
+            &nbsp;&nbsp;&lt;li&gt;Item 3&lt;/li&gt;<br>
+            &lt;/ul&gt;<br><br>
+            &lt;ol&gt;<br>
+            &nbsp;&nbsp;&lt;li&gt;Item 1&lt;/li&gt;<br>
+            &nbsp;&nbsp;&lt;li&gt;Item 2&lt;/li&gt;<br>
+            &nbsp;&nbsp;&lt;li&gt;Item 3&lt;/li&gt;<br>
+            &lt;/ol&gt;
+        </code>
+        </p>
+
+        
+
+        <h2 id="links">Links</h2>
+        <small><a href="#inicio">(Voltar)</a></small>
+        <p>A tag responsável por fazer a navegação tanto para outro site ou para um conteúdo no mesmo site é a tag <strong>&lt;a&gt;</strong>. Nessa tag é obrigatório o uso do atributos href, que é onde terá o destino para onde o link irá levar.</p>
+        <p>Exemplos:</p>
+        <p>Link para a mesma guia: <br><code>&lt;a href="google.com"&gt;&lt;/a&gt;</code></p>
+        <p>Link para outra guia: <br><code>&lt;a href="google.com" target="_blank"&gt;&lt;/a&gt;</code></p>
+        <p>Link para o conteúdo do mesmo site: <br><code>&lt;a href="#id"&gt;&lt;/a&gt;</code></p>
+        
+    </body>
+</html>
